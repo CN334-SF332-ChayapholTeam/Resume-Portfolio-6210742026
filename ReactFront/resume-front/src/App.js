@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser, faIdCard, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons"
+import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
 
 
 // My Picture Profile
@@ -56,8 +56,9 @@ function App() {
 
         {/* Skills Container */}
         <div class="skill-container">
-            <h3>Skills <button>+</button></h3>
+            <h3>Skills</h3>
             <ul class="skill-items-container">
+                <button><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
                 <li class="skill-item">HTML</li>
                 <li class="skill-item">CSS</li>
                 <li class="skill-item">JavaScript</li>

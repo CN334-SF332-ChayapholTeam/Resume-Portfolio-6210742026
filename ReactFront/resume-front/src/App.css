@@ -173,3 +173,42 @@ body {
   padding: 35px;
   font-size: 50px;
 }
+.skill-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.skill-items-container button{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  transition: .3s;
+  font-size: 35px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.skill-items-container button:hover{
+  background-color: #151515;
+  
+}
+.skill-items-container .skill-item{
+  margin: 0 10px;
+  background-color: #ccc;
+  padding: 50px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: .3s;
+}
+.skill-items-container .skill-item:hover{
+  background-color: rgb(149, 147, 147);
+  font-size: 26px;
+
+}
