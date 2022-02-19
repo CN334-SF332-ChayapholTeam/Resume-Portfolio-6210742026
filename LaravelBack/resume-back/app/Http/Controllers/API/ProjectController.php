@@ -9,6 +9,13 @@ use App\Models\Project;
 class ProjectController extends Controller
 {
     //
+    public function index(){
+        $project = Project::all();
+        return response()->json([
+            'status'=> 200,
+            'project'=> $project,
+        ]);
+    }
     public function store(Request $request){
         $project = new Project;
         $project->pname = $request->input('pname');

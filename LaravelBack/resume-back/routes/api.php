@@ -15,6 +15,8 @@ use App\Http\Controllers\API\ProjectController;
 |
 */
 
+
+Route::get('/project', [ProjectController::class, 'index']);
 Route::post('/addwork', [ProjectController::class, 'store']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
