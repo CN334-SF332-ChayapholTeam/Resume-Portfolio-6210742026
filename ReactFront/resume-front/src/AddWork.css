@@ -1,0 +1,58 @@
+*{
+    font-weight: bold;
+}
+.addwork-wrapper {
+    margin-top: 150px;
+    border: 5px solid #333;
+    border-radius: 20px;
+    height: 72vh;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+.addwork-header {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5px solid #333;
+    background-color: #333;
+}
+.addwork-header h2 {
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.addwork-form {
+    padding: 30px 50px;
+}
+.addwork-form label {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 15px 0;
+}
+.addwork-form input {
+    width: 100%;
+    padding: 15px;
+}
+.addwork-button-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.addwork-button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+}
+.addwork-button button {
+    margin-right: 20px;
+    padding: 8px;
+}
+.addwork-button .btn-submit {
+    background-color: rgb(6, 163, 6);
+    border: none;
+    color: #FFF;
+}
+.addwork-button .btn-cancle{
+    background-color: rgb(207, 41, 41);
+    border: none;
+    color: #FFF;
+}

@@ -3,6 +3,7 @@
     border: 5px solid #333;
     border-radius: 20px;
     height: 100vh;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 .work-header {
     padding: 30px;
@@ -15,6 +16,7 @@
 .work-header h2{
     flex: 1;
     font-weight: bold;
+    margin-left: 20px;
     color: #fff;
 }
 .work-header .btn-add-work{
@@ -23,6 +25,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50px;
+    margin-right: 20px;
 }
 .work-header button{
     background-color: #fff;
@@ -39,4 +42,38 @@
     color: #fff;
     border: 1px solid #FFF;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Work Body */
+.work-items {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+    transition: .3s;
+}
+.work-items:hover {
+    background-color: rgb(202, 197, 197);
+}
+.work-items .work-detail {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.work-items .work-detail p {
+    margin: 0 30px;
+}
+.work-items .work-button button {
+    margin: 0 10px;
+    border: none;
+}
+.work-items .work-button .btn-edit {
+    background-color: blue;
+    color: #FFF;
+    padding: 5px 15px;
+}
+.work-items .work-button .btn-del {
+    background-color: red;
+    color: #FFF;
+    padding: 5px 15px;
 }

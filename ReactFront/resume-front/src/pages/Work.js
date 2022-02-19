@@ -14,7 +14,7 @@ class Work extends Component {
                     <div className='tab-wrapper'>
                         <Link to={'profile'} className="link-me"><button><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></button></Link>
                         <Link to={'work'} className="link-me"><button><FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon></button></Link>
-                        <Link to={'work'} className="link-me"><button><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></button></Link>
+                        <Link to={'educate'} className="link-me"><button><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></button></Link>
 
                     </div>
                 </div>
@@ -23,10 +23,44 @@ class Work extends Component {
                 <div className='work-wrapper'>
                     <div className='work-header'>
                         <h2>WORK EXPERIENCE</h2>
-                        <Link to={'add-work'} className="btn-add-work"><button><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button></Link>
+                        <Link to={'addwork'} className="btn-add-work"><button><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button></Link>
                     </div>
 
-                    <div className='work-body'></div>
+                    <div className='work-body'>
+                        <div className='work-items'>
+                            <div className='work-detail'>
+                                <p>Education-Dio-Technology</p>
+                                <p>Front-End Developer</p>
+                                <p>Flutter</p>
+                            </div>
+                            <div className='work-button'>
+                                <button className='btn-edit'>EDIT</button>
+                                <button className='btn-del'>DELETE</button>
+                            </div>
+                        </div>
+                        <div className='work-items'>
+                            <div className='work-detail'>
+                                <p>MDB-19</p>
+                                <p>Front-End Developer/Project Manager</p>
+                                <p>React-Native</p>
+                            </div>
+                            <div className='work-button'>
+                                <button className='btn-edit'>EDIT</button>
+                                <button className='btn-del'>DELETE</button>
+                            </div>
+                        </div>
+                        <div className='work-items'>
+                            <div className='work-detail'>
+                                <p>TODOLIST</p>
+                                <p>Front-End Developer</p>
+                                <p>React-Native</p>
+                            </div>
+                            <div className='work-button'>
+                                <button className='btn-edit'>EDIT</button>
+                                <button className='btn-del'>DELETE</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
