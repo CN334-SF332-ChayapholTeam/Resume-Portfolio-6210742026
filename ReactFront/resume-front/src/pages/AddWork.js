@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
 import '../AddWork.css'
 import axios from 'axios'
+import swal from 'sweetalert';
+
 
 class AddWork extends Component {
 
@@ -25,6 +27,7 @@ class AddWork extends Component {
         const res = await axios.post('http://localhost:8000/api/addwork', this.state);
         if (res.data.status === 200){
             console.log(res.data.message);
+            swal("Success!", res.data.message, "success");
             this.setState({
                 pname: '',
                 rname: '',

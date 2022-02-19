@@ -32,23 +32,23 @@ function App() {
       </div>
 
       {/* Profile */}
-      <div class="container2">
-        <div class="profile-container" >
-          <div class="profile-picture">
+      <div className="container2">
+        <div className="profile-container" >
+          <div className="profile-picture">
             <img src={profilepic} alt="" />
           </div>
-          <div class="profile-title-wrapper">
-            <div class="profile-title-container">
+          <div className="profile-title-wrapper">
+            <div className="profile-title-container">
               <h5>Hi, I'm</h5>
               <h2>Chayaphol Meeprasert </h2>
-              <button class="button-resume"><a>View Resume !</a></button>
+              <button className="button-resume"><a>View Resume !</a></button>
             </div>
           </div>
         </div>
 
         {/* About Me */}
-        <div class="about-me-container">
-          <div class="about-me-wrapper">
+        <div className="about-me-container">
+          <div className="about-me-wrapper">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque beatae delectus dicta mollitia necessitatibus reiciendis rerum nam dolorum, nulla provident laborum molestiae, deserunt incidunt quia explicabo autem similique. Debitis iure sapiente enim fuga corporis sunt porro recusandae minus beatae numquam assumenda consequatur alias quia atque veritatis id, deleniti, tempore ad eos vel tempora placeat autem. Dolorum rem minus sequi et ratione placeat praesentium temporibus, dolore mollitia odit distinctio officiis impedit, iusto voluptas ducimus fugiat dicta doloribus accusantium aperiam, voluptatibus aliquam! Neque, assumenda quos? Veritatis quasi quibusdam cumque, hic omnis illum quisquam quas suscipit modi fugit obcaecati, reprehenderit deserunt consectetur incidunt.</p>
           </div>

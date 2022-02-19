@@ -72,8 +72,14 @@
     color: #FFF;
     padding: 5px 15px;
 }
+.work-items .work-button .btn-edit:hover {
+    background-color: rgb(6, 6, 200);
+}
 .work-items .work-button .btn-del {
     background-color: red;
     color: #FFF;
     padding: 5px 15px;
+}
+.work-items .work-button .btn-del:hover {
+    background-color: rgb(180, 5, 5);
 }

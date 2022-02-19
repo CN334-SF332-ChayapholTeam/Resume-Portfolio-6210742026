@@ -6,6 +6,7 @@ import Profile from './pages/Profile'
 import Work from './pages/Work';
 import AddWork from './pages/AddWork'
 import Education from './pages/Education';
+import EditProject from './pages/EditProject';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/work" component={Work} />
         <Route path="/addwork" component={AddWork} />
         <Route path="/educate" component={Education} />
+        <Route path="/edit-project/:id" component={EditProject} />
       </Switch>
     </Router>
   );

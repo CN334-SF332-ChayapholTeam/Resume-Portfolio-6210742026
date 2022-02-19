@@ -11,8 +11,9 @@ class Work extends Component {
         project: [],
         loading: true,
     }
-    async componentDidMount() {
 
+    // When On This Screen Start Doing This
+    async componentDidMount() {
         const res = await axios.get('http://localhost:8000/api/project');
         if (res.data.status === 200) {
             this.setState({
@@ -20,11 +21,19 @@ class Work extends Component {
                 loading: false,
             });
         }
+    }
 
+    deleteProject = async (e, id) => {
+        const thidClickFunda = e.currentTarget;
+        thidClickFunda.innerText = "Deleting";
+        const res = await axios.delete(`http://localhost:8000/api/delete-project/${id}`);
+        if (res.data.status === 200){
+            thidClickFunda.closest("section").remove();
+            console.log(res.data.message);
+        }
     }
 
     render() {
-
         var project_HTMLTABLE = "";
         if (this.state.loading) {
             project_HTMLTABLE = <div className='work-items'>
@@ -37,7 +46,7 @@ class Work extends Component {
             project_HTMLTABLE =
                 this.state.project.map((item) => {
                     return (
-                        <div className='work-items' key={item.id}>
+                        <section className='work-items' key={item.id}>
                             <div className='work-detail'>
                                 <p>{item.pname}</p>
                                 <p>{item.rname}</p>
@@ -45,9 +54,9 @@ class Work extends Component {
                             </div>
                             <div className='work-button'>
                                 <Link to={`edit-project/${item.id}`}><button className='btn-edit'>EDIT</button></Link>
-                                <button type='button' className='btn-del'>DELETE</button>
+                                <button type='button' onClick={(e) => this.deleteProject(e, item.id)} className='btn-del'>DELETE</button>
                             </div>
-                        </div>
+                        </section>
                 );
         });
     }
