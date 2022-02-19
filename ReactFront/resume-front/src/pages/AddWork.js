@@ -3,8 +3,35 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
 import '../AddWork.css'
+import axios from 'axios'
 
 class AddWork extends Component {
+
+    state = {
+        pname: '',
+        rname: '',
+        tname: '',
+    }
+
+    handleInput = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+
+    saveWork = async (e) => {
+        e.preventDefault();
+
+        const res = await axios.post('http://localhost:8000/api/addwork', this.state);
+        if (res.data.status === 200){
+            console.log(res.data.message);
+            this.setState({
+                pname: '',
+                rname: '',
+                tname: '',
+            });
+        }
+    }
 
     render() {
         return (
@@ -25,18 +52,18 @@ class AddWork extends Component {
                         <h2>TYPES YOUR PROJECT DETAILS</h2>
                     </div>
 
-                    <form>
+                    <form onSubmit={this.saveWork}>
                         <div className='addwork-form'>
                             <label>Project Name</label><br/>
-                            <input  type="text" className="project-name" placeholder="Enter your project name" /><br/>
+                            <input type="text" onChange={this.handleInput} name='pname' value={this.state.pname} className="project-name" placeholder="Enter your project name" /><br/>
                             <label>Roles</label><br/>
-                            <input  type="text" className="project-role" placeholder="Enter your role " /><br/>
+                            <input type="text" onChange={this.handleInput} name='rname' value={this.state.rname} className="project-role" placeholder="Enter your role " /><br/>
                             <label>Tools</label><br/>
-                            <input type="text" className="project-tools" placeholder="Enter tools" />
+                            <input type="text" onChange={this.handleInput} name='tname' value={this.state.tname} className="project-tools" placeholder="Enter tools" />
                         </div>
                         <div className='addwork-button-wrapper'>
                             <div className='addwork-button'>
-                                <button className='btn-submit'>SUBMIT</button>
+                                <button type="submit" className='btn-submit'>SUBMIT</button>
                                 <button className='btn-cancle'>CANCLE</button>
                             </div>
                         </div>
