@@ -1,0 +1,42 @@
+.work-wrapper {
+    margin-top: 150px;
+    border: 5px solid #333;
+    border-radius: 20px;
+    height: 100vh;
+}
+.work-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5px solid #333;
+    background-color: #333;
+}
+.work-header h2{
+    flex: 1;
+    font-weight: bold;
+    color: #fff;
+}
+.work-header .btn-add-work{
+    background-color: #fff;
+    color: #333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.work-header button{
+    background-color: #fff;
+    border: none;
+    color: #333;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    transition: .3s;
+}
+.work-header button:hover{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #FFF;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
