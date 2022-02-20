@@ -46,7 +46,7 @@ function App() {
               <h2>Chayaphol Meeprasert </h2>
               <div>
                 <a href='https://github.com/chayaphol-mac123' target="_blank"><button><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></button></a>
-                <a href='https://www.facebook.com/' target="_blank"><button><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></button></a>
+                <a href='https://www.facebook.com/' target="_blank"><button><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></button></a>
 
               </div>
 
@@ -58,7 +58,7 @@ function App() {
         <div className="about-me-container">
           <div className="about-me-wrapper">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque beatae delectus dicta mollitia necessitatibus reiciendis rerum nam dolorum, nulla provident laborum molestiae, deserunt incidunt quia explicabo autem similique. Debitis iure sapiente enim fuga corporis sunt porro recusandae minus beatae numquam assumenda consequatur alias quia atque veritatis id, deleniti, tempore ad eos vel tempora placeat autem. Dolorum rem minus sequi et ratione placeat praesentium temporibus, dolore mollitia odit distinctio officiis impedit, iusto voluptas ducimus fugiat dicta doloribus accusantium aperiam, voluptatibus aliquam! Neque, assumenda quos? Veritatis quasi quibusdam cumque, hic omnis illum quisquam quas suscipit modi fugit obcaecati, reprehenderit deserunt consectetur incidunt.</p>
+            <p>A highly responsible and recent graduate in Software Engineering from Thammasat University with a good command of English communication, seeking a job position of Software Engineering / Developer to further my professional experience and utilize my skills and knowledge to greatly benefit to your company's objectives. </p>
           </div>
         </div>
 
