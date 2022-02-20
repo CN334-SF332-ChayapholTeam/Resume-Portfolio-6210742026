@@ -4,7 +4,10 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-
+.containeredu {
+    margin: 150px 300px;
+    margin-bottom: 130px;
+}
 .educat-wrapper {
     margin-top: 150px;
     border-radius: 20px;

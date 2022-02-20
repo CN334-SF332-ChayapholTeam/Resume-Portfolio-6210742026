@@ -1,10 +1,10 @@
 import '../App.css';
 import React, { useState, useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faFacebookF  } from "@fortawesome/free-brands-svg-icons"
+import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faFacebookF, faFacebook } from "@fortawesome/free-brands-svg-icons"
 
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import ReactTypingEffect from 'react-typing-effect'
 
 // My Picture Profile
@@ -30,7 +30,7 @@ function App() {
           <Link to={'profile'} className="link-me"><button><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></button></Link>
           <Link to={'work'} className="link-me"><button><FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon></button></Link>
           <Link to={'educate'} className="link-me"><button><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></button></Link>
-          
+
         </div>
       </div>
 
@@ -47,9 +47,9 @@ function App() {
               <div>
                 <a href='https://github.com/chayaphol-mac123' target="_blank"><button><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></button></a>
                 <a href='https://www.facebook.com/' target="_blank"><button><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></button></a>
-                
+
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -80,17 +80,17 @@ function App() {
               </figure>
 
               <figure className='skill-items'>
-                <img src={require('../img/java.png')}/>
+                <img src={require('../img/java.png')} />
                 <figcaption>
                   <h3>Java</h3>
-                  <p>Status: Good</p>
+                  <p>Status: Moderate</p>
                 </figcaption>
               </figure>
             </div>
 
             <div className='skill-flex'>
               <figure className='skill-items'>
-                <img src={require('../img/html.png')}/>
+                <img src={require('../img/html.png')} />
                 <figcaption>
                   <h3>HTML</h3>
                   <p>Status: Good</p>
@@ -98,7 +98,7 @@ function App() {
               </figure>
               {/* Web Programming */}
               <figure className='skill-items'>
-                <img src={require('../img/css-3.png')}/>
+                <img src={require('../img/css-3.png')} />
                 <figcaption>
                   <h3>CSS</h3>
                   <p>Status: Good</p>
@@ -106,7 +106,7 @@ function App() {
               </figure>
 
               <figure className='skill-items'>
-                <img src={require('../img/js.png')}/>
+                <img src={require('../img/js.png')} />
                 <figcaption>
                   <h3>JS</h3>
                   <p>Status: Good</p>
@@ -116,25 +116,51 @@ function App() {
             {/* Framework */}
             <div className='skill-flex'>
               <figure className='skill-items'>
-                <img src={require('../img/physics.png')}/>
+                <img src={require('../img/physics.png')} />
                 <figcaption>
-                  <h3>React</h3>
+                  <h3>React / RN</h3>
                   <p>Status: Good</p>
                 </figcaption>
               </figure>
 
               <figure className='skill-items'>
-                <img src={require('../img/flutter.png')}/>
+                <img src={require('../img/flutter.png')} />
                 <figcaption>
                   <h3>Flutter</h3>
-                  <p>Status: Good</p>
+                  <p>Status: Moderate</p>
                 </figcaption>
               </figure>
             </div>
 
           </div>
         </section>
-      </div>
+        </div>
+        {/* Footer */}
+        <footer id='footer'>
+          <div className='footer-container'>
+            <div className='footer-flex'>
+              <div className='footer-items'>
+                <h3>Peronal Record</h3>
+                <ul>
+                  <li>Fullname: Chayaphol Meeprasert</li>
+                  <li>Nickname: Mac</li>
+                  <li>Age: 20</li>
+                  <li>Birthday: 25 March 2001</li>
+                </ul>
+
+              </div>
+              <div className='footer-items'>
+                <h3>Contact Me</h3>
+                <ul>
+                  <li><FontAwesomeIcon className='footer-icon' icon={faPhone}></FontAwesomeIcon>093-583-2960</li>
+                  <li><FontAwesomeIcon className='footer-icon' icon={faFacebook}></FontAwesomeIcon>Chayaphol Meeprasert</li>
+                  <li><FontAwesomeIcon className='footer-icon' icon={faEnvelope}></FontAwesomeIcon>chayaphol.meep@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      
 
 
     </div>

@@ -9,7 +9,7 @@ class Education extends Component {
     render() {
         return (
 
-            <div className='container'>
+            <div className='containeredu'>
                 <div className="tab">
                     <div className='tab-wrapper'>
                         <Link to={'profile'} className="link-me"><button><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></button></Link>

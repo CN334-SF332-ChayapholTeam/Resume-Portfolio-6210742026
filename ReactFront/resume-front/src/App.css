@@ -199,3 +199,38 @@ body {
   margin-top: 15px;
 }
 
+/* Footer */
+footer {
+  background-color: #333;
+  height: 250px;
+  color: #333;
+}
+.footer-container {
+  margin: 0 auto;
+  margin-left: 25%;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-items {
+  background-color: #333;
+  width: 100%;
+  padding: 30px;
+  height: 100%;
+  color: #FFF;
+}
+.footer-items ul {
+  list-style: none
+  
+}
+.footer-items ul li {
+  margin-top: 10px;
+  margin-left: -15px;
+}
+.footer-items ul li .footer-icon{
+  margin-right: 8px;
+}
