@@ -13,6 +13,7 @@ class AddWork extends Component {
         pname: '',
         rname: '',
         tname: '',
+        error_list: [],
     }
 
     handleInput = (e) => {
@@ -33,6 +34,12 @@ class AddWork extends Component {
                 rname: '',
                 tname: '',
             });
+        }
+        else {
+            this.setState({
+                error_list: res.data.validate_err
+            });
+            console.log("KUY");
         }
     }
 
@@ -59,15 +66,18 @@ class AddWork extends Component {
                         <div className='addwork-form'>
                             <label>Project Name</label><br/>
                             <input type="text" onChange={this.handleInput} name='pname' value={this.state.pname} className="project-name" placeholder="Enter your project name" /><br/>
+                            <span className='text-danger'>{this.state.error_list.pname}</span>
                             <label>Roles</label><br/>
                             <input type="text" onChange={this.handleInput} name='rname' value={this.state.rname} className="project-role" placeholder="Enter your role " /><br/>
+                            <span className='text-danger'>{this.state.error_list.rname}</span>
                             <label>Tools</label><br/>
                             <input type="text" onChange={this.handleInput} name='tname' value={this.state.tname} className="project-tools" placeholder="Enter tools" />
+                            <span className='text-danger'>{this.state.error_list.tname}</span>
                         </div>
                         <div className='addwork-button-wrapper'>
                             <div className='addwork-button'>
                                 <button type="submit" className='btn-submit'>SUBMIT</button>
-                                <button className='btn-cancle'>CANCLE</button>
+                                <Link to={'work'}><button className='btn-cancle'>CANCLE</button></Link>
                             </div>
                         </div>
                     </form>

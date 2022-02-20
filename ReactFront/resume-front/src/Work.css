@@ -48,7 +48,7 @@
 .work-items {
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 35px;
     border-bottom: 1px solid #ccc;
     transition: .3s;
 }
@@ -57,11 +57,17 @@
 }
 .work-items .work-detail {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
 }
 .work-items .work-detail p {
     margin: 0 30px;
+}
+.work-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .work-items .work-button button {
     margin: 0 10px;

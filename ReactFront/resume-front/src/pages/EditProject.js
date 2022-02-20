@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
 import '../AddWork.css'
 import axios from 'axios'
+import swal from 'sweetalert';
 
 class EditWork extends Component {
 
@@ -39,6 +40,7 @@ class EditWork extends Component {
         const res = await axios.put(`http://localhost:8000/api/update-project/${project_id}`, this.state);
         if (res.data.status === 200){
             console.log(res.data.message);
+            swal("Updated!", res.data.message, "success");
             document.getElementById('btn-update').innerHTML = "Update Project";
         }
     }
@@ -74,7 +76,7 @@ class EditWork extends Component {
                         <div className='addwork-button-wrapper'>
                             <div className='addwork-button'>
                                 <button id='btn-update' type="submit" className='btn-submit'>UPDATE</button>
-                                <button className='btn-cancle'>CANCLE</button>
+                                <Link to={'/work'}><button className='btn-cancle'>CANCLE</button></Link>
                             </div>
                         </div>
                     </form>

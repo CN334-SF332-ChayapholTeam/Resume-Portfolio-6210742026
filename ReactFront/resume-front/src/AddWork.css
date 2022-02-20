@@ -61,3 +61,8 @@
     border: none;
     color: #FFF;
 }
+.addwork-button .btn-cancle:hover{
+    background-color: rgb(148, 18, 18);
+    border: none;
+    color: #FFF;
+}

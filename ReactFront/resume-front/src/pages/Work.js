@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
 import '../Work.css'
 import axios from 'axios'
+import swal from 'sweetalert';
 
 class Work extends Component {
 
@@ -29,6 +30,7 @@ class Work extends Component {
         const res = await axios.delete(`http://localhost:8000/api/delete-project/${id}`);
         if (res.data.status === 200){
             thidClickFunda.closest("section").remove();
+            swal("Deleted!", res.data.message, "success");
             console.log(res.data.message);
         }
     }
@@ -48,9 +50,9 @@ class Work extends Component {
                     return (
                         <section className='work-items' key={item.id}>
                             <div className='work-detail'>
-                                <p>{item.pname}</p>
-                                <p>{item.rname}</p>
-                                <p>{item.tname}</p>
+                                <p>Project: {item.pname}</p>
+                                <p>Roles: {item.rname}</p>
+                                <p>Tools: {item.tname}</p>
                             </div>
                             <div className='work-button'>
                                 <Link to={`edit-project/${item.id}`}><button className='btn-edit'>EDIT</button></Link>
