@@ -4,6 +4,7 @@
     border-radius: 20px;
     height: 100vh;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    overflow: auto;
 }
 .work-header {
     padding: 30px;
@@ -43,8 +44,14 @@
     border: 1px solid #FFF;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* Work Body */
+.work-body {
+    overflow: auto;
+}
 .work-items {
     display: flex;
     flex-direction: row;
@@ -62,6 +69,7 @@
 }
 .work-items .work-detail p {
     margin: 0 30px;
+    font-size: 20px;
 }
 .work-button {
     display: flex;
@@ -76,7 +84,8 @@
 .work-items .work-button .btn-edit {
     background-color: blue;
     color: #FFF;
-    padding: 5px 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
 }
 .work-items .work-button .btn-edit:hover {
     background-color: rgb(6, 6, 200);
@@ -84,7 +93,8 @@
 .work-items .work-button .btn-del {
     background-color: red;
     color: #FFF;
-    padding: 5px 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
 }
 .work-items .work-button .btn-del:hover {
     background-color: rgb(180, 5, 5);

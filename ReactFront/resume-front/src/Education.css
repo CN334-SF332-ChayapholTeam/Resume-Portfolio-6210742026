@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.educat-wrapper {
+    margin-top: 150px;
+    border-radius: 20px;
+    height: 125vh;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+.educat-header {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-bottom: 2px solid #333;
+   
+}
+.educat-header h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 50px;
+}
+.educat-year {
+    text-align: center;
+    padding: 50px;
+}
+.educat-year h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.educat-flex {
+    display: flex;
+    flex-direction: row;
+}
+.educat-items {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    background-color: #fff;
+}
+.educat-items:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+  
+.educat-items img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}

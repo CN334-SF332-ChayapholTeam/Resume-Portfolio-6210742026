@@ -2,7 +2,10 @@ import '../App.css';
 import React, { useState, useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faFacebookF  } from "@fortawesome/free-brands-svg-icons"
+
 import {Link} from 'react-router-dom'
+import ReactTypingEffect from 'react-typing-effect'
 
 // My Picture Profile
 import profilepic from '../img/macd.jpg'
@@ -41,7 +44,12 @@ function App() {
             <div className="profile-title-container">
               <h5>Hi, I'm</h5>
               <h2>Chayaphol Meeprasert </h2>
-              <button className="button-resume"><a>View Resume !</a></button>
+              <div>
+                <a href='https://github.com/chayaphol-mac123' target="_blank"><button><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></button></a>
+                <a href='https://www.facebook.com/' target="_blank"><button><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></button></a>
+                
+              </div>
+              
             </div>
           </div>
         </div>

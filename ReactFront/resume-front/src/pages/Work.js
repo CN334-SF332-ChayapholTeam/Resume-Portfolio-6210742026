@@ -50,9 +50,9 @@ class Work extends Component {
                     return (
                         <section className='work-items' key={item.id}>
                             <div className='work-detail'>
-                                <p>Project: {item.pname}</p>
-                                <p>Roles: {item.rname}</p>
-                                <p>Tools: {item.tname}</p>
+                                <p>PROJECT:  {item.pname}</p>
+                                <p>ROLES:  {item.rname}</p>
+                                <p>TOOLS:  {item.tname}</p>
                             </div>
                             <div className='work-button'>
                                 <Link to={`edit-project/${item.id}`}><button className='btn-edit'>EDIT</button></Link>

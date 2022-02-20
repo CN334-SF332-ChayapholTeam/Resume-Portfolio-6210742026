@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faIdCard, faGraduationCap, faBriefcase, faPlus } from "@fortawesome/free-solid-svg-icons"
-import '../AddWork.css'
+import '../Education.css'
 
 class Education extends Component {
 
@@ -19,9 +19,51 @@ class Education extends Component {
                     </div>
                 </div>
 
-                <div className='addwork-wrapper'>
-                    <div className='addwork-header'>
-                        <h2>Education</h2>
+                <div className='educat-wrapper'>
+                    <div className='educat-header'>
+                        <h2>EDUCATION</h2>
+                    </div>
+
+                    <div className='educat-year'>
+                        <h3>2013 - 2018</h3>
+                    </div>
+
+                    <div className='educat-flex'>
+                        <figure className='educat-items'>
+                            <img src={require('../img/schools/skn.jpg')} />
+                            <figcaption>
+                                <h3>Suankularb Nonthaburi</h3>
+                                <p>2013-2015</p>
+                            </figcaption>
+                        </figure>
+                        <figure className='educat-items'>
+                            <img src={require('../img/schools/pcs.png')} />
+                            <figcaption>
+                                <h3>Pitchaya Suksa</h3>
+                                <p>2015-2016</p>
+                            </figcaption>
+                        </figure>
+                        <figure className='educat-items'>
+                            <img src={require('../img/schools/skn.jpg')} />
+                            <figcaption>
+                                <h3>Suankularb Nonthaburi</h3>
+                                <p>2017-2018</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div className='educat-year'>
+                        <h3>2019 - 2022</h3>
+                    </div>
+
+                    <div className='educat-flex'>
+                        <figure className='educat-items'>
+                            <img src={require('../img/schools/tms.png')} />
+                            <figcaption>
+                                <h3>Thammasat University</h3>
+                                <p>2019-2022</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
 
